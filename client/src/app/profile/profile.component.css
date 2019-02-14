@@ -1,0 +1,54 @@
+.input-group .input-group-prepend .input-group-text {
+    min-width: 120px;
+}
+
+.container{
+  background-color: black;
+}
+
+.myProfile{
+  padding-top: 20px;
+}
+
+.update{
+  padding-bottom: 20px;
+}
+
+.input-group-text{
+	font-weight: bold;
+}
+
+.msg_success{
+    color: green;
+}
+
+
+
+.profileImage{
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  }
+
+.roundedImage {
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  -webkit-border-radius:50px;
+  -moz-border-radius:50px;
+  border-radius:50px;
+  width:90px;
+  height:90px;
+
+}
+
+.title{
+  padding: 10px;
+  font-weight: bolder;
+  background-color: white;
+}
+
+
+
+

@@ -1,0 +1,31 @@
+
+<div class="container">
+  <div class="col-md-6 offset-3">
+    <p class="msg_success">{{ msg }}</p> 
+    <h3>Register:</h3>
+      <form>
+        <div class="form-group">
+          <label for="fname">First Name:</label>
+          <input type="text" class="form-control" name="firstname" [(ngModel)]="details.firstname" id="fname">
+        </div>
+        <div class="form-group">
+          <label for="lname">Last Name:</label>
+          <input type="text" class="form-control" name="lastname" [(ngModel)]="details.lastname" id="lname">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" name="email" [(ngModel)]="details.email" id="email">
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" class="form-control" name="password" [(ngModel)]="details.password" id="password">
+        </div>
+        <div class="form-group">
+          <label for="dob">Date Of Birth:</label>
+          <input type="Date" class="form-control" name="dob" [(ngModel)]="details.dob" id="dob">
+        </div>
+        <button  (click)="signup(details)" class="btn btn-primary">Register</button>
+        <a routerLink="/login" class="loginLink">Already a user? Login</a>
+      </form>
+  </div>
+</div>

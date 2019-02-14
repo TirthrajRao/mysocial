@@ -1,0 +1,25 @@
+<div id="parent">
+	
+	<form class="form-inline md-form mr-auto mb-8" id="form_login">
+	  <input class="form-control mr-sm-2" type="text" placeholder="Search to Whisper"  aria-label="Search" [(ngModel)]="key" name="search">
+	  <button class="btn btn-primary" type="submit" (click)="searchUser()">Search</button>
+	</form>
+
+</div>
+
+<div class="userResult" >
+	<table align="center">
+	  <tr *ngFor="let userInfo of users;">
+	  	<td><img src="http://localhost/Social-Media/server/{{userInfo.profileImage}}" height="50" width="50" alt="post Image"></td>
+	    <td>{{userInfo.firstname}} {{userInfo.lastname}}</td>
+
+	    <td align="center" *ngIf="!userInfo.isFriend">
+	    	<button  type="submit" class="btn btn-primary" (click)="addFriend(userInfo._id)">Add Friend</button>
+	    </td>
+
+	    <td align="center" *ngIf="userInfo.isFriend">
+	    	<button  type="submit" class="btn btn-primary">UnFriend</button>
+	    </td>
+	  </tr>
+	</table>
+</div>

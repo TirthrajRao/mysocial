@@ -1,0 +1,36 @@
+body {
+  font-family: Arial;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.searchForm{
+  margin: 10px;
+  padding-left: 400px
+}
+
+#parent {
+   display: table;
+   width: 100%;
+   margin: 10px
+}
+#form_login {
+   display: table-cell;
+   text-align: center;
+   vertical-align: middle;
+}
+

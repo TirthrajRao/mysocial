@@ -1,0 +1,43 @@
+.panel{
+	border-style: none;
+	width: 50%;
+	margin-left: 10px;
+}
+
+.panel-default .panel-heading {
+    background-color: black;
+    margin-top: 20px;
+}
+
+.panel-default .panel-heading  h5{
+	font-weight: bold;
+	margin-bottom: 0;
+	color: #fff;
+	padding: 10px; 
+}
+
+.panel-default .panel-body {
+    background-color: #e9ecef;
+}
+
+.panel-default .panel-body p{
+	padding: 10px
+    
+}
+
+a{
+	text-decoration: none;
+	color: red;
+	font-weight: normal;
+	font-size: 15px
+}
+
+a:hover{
+	text-decoration: none;
+	color: #ff5000;
+}
+
+.postImage{
+	padding: 10px
+	
+}

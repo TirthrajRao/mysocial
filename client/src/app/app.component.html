@@ -1,0 +1,40 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+<nav class="navbar navbar-expand-sm navbar-dark">
+  
+    <div class="navbar-header">
+      <a class="navbar-brand nav-link"  routerLink='/timeline'>WhisperIt</a>
+    </div>
+    <ul class="navbar-nav">
+      <li *ngIf="!loggedIn" class="nav-item active">
+        <a routerLink="/login" class="menu_items nav-link">Login</a>
+      </li>
+
+      <li *ngIf="!loggedIn" class="nav-item">
+        <a routerLink="/signup" class="menu_items nav-link">Register</a>
+      </li>
+
+      <li *ngIf="loggedIn" class="nav-item">
+        <a routerLink="/timeline" class="menu_items nav-link">Home</a>
+      </li>
+
+      <li *ngIf="loggedIn" class="nav-item">
+        <a routerLink="/addpost" class="menu_items nav-link">Add Post</a>
+      </li>
+
+      <li *ngIf="loggedIn" class="nav-item">
+        <a routerLink="/profile" class="menu_items nav-link">My Profile</a>
+      </li>
+
+       <li *ngIf="loggedIn" class="nav-item">
+        <a routerLink="/search" class="menu_items nav-link">Search</a>
+      </li>
+
+      <li *ngIf="loggedIn" class="menu_items nav-item">
+        <a (click)="Logout()"  class="menu_items nav-link" routerLink="/login">Logout</a>
+      </li>
+    </ul>
+</nav>
+
+<router-outlet></router-outlet>

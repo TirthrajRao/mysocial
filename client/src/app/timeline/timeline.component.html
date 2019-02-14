@@ -1,0 +1,17 @@
+<div class="panel panel-default" *ngFor="let posts of myPosts;">
+
+  <div class="panel-heading">
+  	<h5>{{firstname}} {{lastname}} 
+  		<!-- <span style="float: right;" class="delete"><a (click) = "deletePost(myPosts._id)">Delete</a></span> -->
+  	</h5>
+  </div>
+
+  <div class="panel-body">
+  	<p class="postContent">{{posts.content}}</p>
+
+    <div *ngIf="posts.postImage" class="postImage">
+      <img src="http://localhost/Social-Media/server/{{posts.postImage}}" height="180" width="250" alt="post Image">
+    </div>
+
+  </div>
+</div>

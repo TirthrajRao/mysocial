@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <p class="msg_success">{{ msg }}</p>
+            <h1>Create Post:</h1> 
+            <form>
+
+            <div class="form-group">
+                <label for="content">Description:</label>
+                <textarea rows="5" class="form-control" name="content" [(ngModel)]="post.content" id="content"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="content">Add Photo:</label>
+                <input type="file" name="image" id="image" class="form-control-file" (change)="fileChange($event)">
+            </div>
+
+            <div class="material-switch">
+
+                        <h6>Make post public?</h6>
+                        <input id="someSwitchOptionPrimary" [(ngModel)]="post.publish" name="publish" type="checkbox" checked="checked"/>
+                        <label for="someSwitchOptionPrimary" class="label-primary"></label>
+            </div>
+
+            <div class="form-group" style="margin-top: 30px">
+                <button type="button" class="btn btn-primary" (click)="addPost(post)">
+                    Post
+                </button>
+            </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>
